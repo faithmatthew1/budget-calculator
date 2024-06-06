@@ -85,16 +85,16 @@ def results():
 
 
   if sum_of_needs > needs_suggestion:
-    return_statement += "\nCongratulations, you're off to a great start. Due to your financial circumstances, we recommend you rethink your spending choices, prioritize paying your needs, and earning more money. \nOn the social good page, you should check out options to contribute that don't require income!"
+    return_statement += "\nCongratulations, you're off to a great start. Due to your financial circumstances, we recommend you rethink your spending choices, prioritize paying your needs, and earning more money. \nOn the social good page, you should check out options to contribute that don't require income!\n"
 
   if sum_of_needs < needs_suggestion:
     extra = needs_suggestion - sum_of_needs
-    return_statement += f"Congratulations! You have an extra ${extra}. Consider putting it towards your savings or debt. If not, look at ways you can do social good by checking out ways to contribute monetarily to a cause of your choice!"
+    return_statement += f"Congratulations! You have an extra ${extra}. Consider putting it towards your savings or debt. If not, look at ways you can do social good by checking out ways to contribute monetarily to a cause of your choice!\n"
 
 
 
   if sum_of_needs == needs_suggestion:
-    return_statement += "\nCongratulations! Your budget is perfectly balanced. \n\nLook at ways you can do social good by checking out ways to contribute to a cause of your choice without disrupting your income!"
+    return_statement += "\nCongratulations! Your budget is perfectly balanced. \n\nLook at ways you can do social good by checking out ways to contribute to a cause of your choice without disrupting your income!\n"
 
 
   return render_template('results.html', return_statement = return_statement, needs_suggestion = needs_suggestion, wants_suggestion = wants_suggestion, savings_suggestion = savings_suggestion, sum_of_needs = sum_of_needs, sum_of_wants = sum_of_wants, sum_of_savings = sum_of_savings)
