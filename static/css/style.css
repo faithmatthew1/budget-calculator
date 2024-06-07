@@ -48,7 +48,7 @@ a.navbar-index:hover {
 }
  */
 
-h2 {
+.index-page-prompt {
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -71,12 +71,12 @@ body {
   color: white;
   width: 270px;
   font-color: white;
-  font-size: 33px;
+  font-size: 30px;
   height: 70px;
   display: block;
   margin: auto;
   text-align: center;
-  vertical-align: middle;
+  padding: 10px;
 }
 
 .gif{
@@ -187,9 +187,10 @@ a.navbar-calc:hover {
   color: white;
   font-color: white;
   font-size: 30px;
+  display: block;
+  margin: auto;
   text-align: center;
-  margin-right: 60%;
-  margin-top: 32%
+  padding: 10px;
   
 }
 
