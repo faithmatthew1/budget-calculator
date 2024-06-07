@@ -47,6 +47,12 @@ a.navbar-index:hover {
   color: #7ea8be;
 }
  */
+
+h2 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .footer{
   background-color: #7ea8be;
   position: relative;
@@ -59,6 +65,7 @@ body {
   flex-direction: column;
 }
 /* Button*/
+
 .Button{
   background-color: #1e555c;
   color: white;
@@ -66,18 +73,10 @@ body {
   font-color: white;
   font-size: 33px;
   height: 70px;
-  position: relative;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: inline-block;
+  display: block;
+  margin: auto;
   text-align: center;
-  margin-top: 8.5em;
-  margin-left: 0em;
-  padding-top: 8px;
+  vertical-align: middle;
 }
 
 .gif{
